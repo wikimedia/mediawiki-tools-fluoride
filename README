@@ -1,0 +1,5 @@
+Fluoride
+--------
+
+Fluoride is a set of tools for aggregating MediaWiki error logs and producing
+alerts and reports. See <https://www.mediawiki.org/wiki/Fluoride>.
