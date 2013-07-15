@@ -70,12 +70,15 @@ def parse_trace(trace):
         return exception
 
 
-pattern = (r'\[(?P<timestamp>[^\]]+)\] Fatal error: (?P<message>.*) at '
-           r'(?P<file>\/[\S]+) on line (?P<line>\d+)')
+fatal_pattern = (r'\[(?P<timestamp>[^\]]+)\] Fatal error: (?P<message>.*) at '
+                 r'(?P<file>\/[\S]+) on line (?P<line>\d+)')
 
+"""
+e.g.:
 for line in open('fatal.log'):
     if line.startswith('[') and not re.match(pattern, line):
         print line
+"""
 
 
 def iter_exceptions(buffer):
